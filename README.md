@@ -1,9 +1,9 @@
 # TP1-PDS
 # Rendu Pablo Espana Gutierrez et Côme Neyrand.
 
-Bonjour, voici le résumé de notre projet.
+### Bonjour, voici le résumé de notre projet.
 
-Nous avions initialement choisi l'ASD suivante :
+### Nous avions initialement choisi l'ASD suivante :
 
 
 
@@ -17,7 +17,7 @@ Objet ::= OBJET(String) | STRING(STRING)
 
 
 
-Cependant, il semblait assez difficile de pouvoir adapter cette ASD si l'on voulait rajouter une extension car le TAD Turtle encapsule trop d'information, c'est pourquoi nous avons décidé de garder l'ASD suivante, mieux répartie :
+### Cependant, il semblait assez difficile de pouvoir adapter cette ASD si l'on voulait rajouter une extension car le TAD Turtle encapsule trop d'information, c'est pourquoi nous avons décidé de garder l'ASD suivante, mieux répartie :
 
 
 
@@ -31,7 +31,7 @@ Objet ::= OBJET(String) | STRING(String)
 
 
 
-Nous avons ensuite attribué notre ASD de la manière suivante :
+### Nous avons ensuite attribué notre ASD de la manière suivante :
 
 
 [Turtle.Triplets, une liste de String]
@@ -58,8 +58,8 @@ Objet ::= OBJET(String) | STRING(String) ---{Objet.val = [String]}
 
 
 
-L'idée est de générer la liste des triplets en remontant l'AST.
-En ce qui concerne le parser, nous avons défini la grammaire suivante :
+### L'idée est de générer la liste des triplets en remontant l'AST.
+### En ce qui concerne le parser, nous avons défini la grammaire suivante :
 
 
 
@@ -73,8 +73,8 @@ O -> " Str " | < Str >
 
 
 
-Le lexer reconnait les token nécessaires et des string qui comportent des lettres, des chiffres, des espaces, des tirets et des esperluettes.
-Nous avions au départ une erreur : à cause d'une récursivité du mauvais côté le parser n'arrivait pas à fonctionner. Pour corriger cela nous avons donc légèrement modifié notre grammaire pour obtenir celle-ci :
+### Le lexer reconnait les token nécessaires et des string qui comportent des lettres, des chiffres, des espaces, des tirets et des esperluettes.
+### Nous avions au départ une erreur : à cause d'une récursivité du mauvais côté le parser n'arrivait pas à fonctionner. Pour corriger cela nous avons donc légèrement modifié notre grammaire pour obtenir celle-ci :
 
 
 T -> ST | epsilon
@@ -86,4 +86,4 @@ V -> < Str > O (, O)*
 O -> " Str " | < Str >
 
 
-Nous avons testé notre compilateur sur les deux fichiers tests et obtenu les résultats attendus, ainsi que sur un fichier de test personnel. Pour cela, il suffit après un make de lancer la commande ./main.native < tests/test1.ttl
+### Nous avons testé notre compilateur sur les deux fichiers tests et obtenu les résultats attendus, ainsi que sur un fichier de test personnel. Pour cela, il suffit après un make de lancer la commande ./main.native < tests/test1.ttl
