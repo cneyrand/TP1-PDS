@@ -6,8 +6,11 @@ Bonjour, voici le résumé de notre projet.
 Nous avions initialement choisi l'ASD suivante :
 
 Turtle ::= PHRASE((Sujet (Predicat (Objet)+)+)*)
+
 Sujet ::= SUJET(String)
+
 Predicat ::= PREDICAT(String)
+
 Objet ::= OBJET(String) | STRING(STRING)
 
 Cependant, il semblait assez difficile de pouvoir adapter cette ASD si l'on voulait rajouter une extension car le TAD Turtle encapsule trop d'information, c'est pourquoi nous avons décidé de garder l'ASD suivante, mieux répartie :
