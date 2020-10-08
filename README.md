@@ -5,7 +5,7 @@ Bonjour, voici le résumé de notre projet.
 
 Nous avions initialement choisi l'ASD suivante :
 
-Turtle ::= PHRASE((Sujet (Predicat (Objet)+)+)*) \n
+Turtle ::= PHRASE((Sujet (Predicat (Objet)+)+)*)
 Sujet ::= SUJET(String)
 Predicat ::= PREDICAT(String)
 Objet ::= OBJET(String) | STRING(STRING)
