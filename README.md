@@ -1,7 +1,7 @@
 # TP1-PDS
 # Rendu Pablo Espana Gutierrez et Côme Neyrand.
 
-### Bonjour, voici le résumé de notre projet.
+### Bonjour, voici le résumé de notre projet, implémenté en OCaml.
 
 ### Nous avions initialement choisi l'ASD suivante :
 
@@ -58,7 +58,7 @@ Objet ::= OBJET(String) | STRING(String) ---{Objet.val = [String]}
 
 
 
-### L'idée est de générer la liste des triplets en remontant l'AST.
+### L'idée est de générer la liste des triplets en remontant l'AST. La fonction qui prend un AST et renvoie un texte en NTriples a été implémentée en utilisant des fonctions mutuellement récursives.
 ### En ce qui concerne le parser, nous avons défini la grammaire suivante :
 
 
